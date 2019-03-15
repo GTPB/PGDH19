@@ -8,6 +8,8 @@ In this five-day course we will introduce the main concepts that underlie many o
 
 Most theory will be put into practice in practical sessions, analyzing real and/or simulated datasets. In these sessions, we will look at measures of genetic diversity and differentiation and use methods to infer demographic history. We will learn how to perform coalescent simulations of genetic/genomic data (using mainly Richard Hudson's ms program). We will also show how to simulate data for PSMC analyses. This will allow users to compare the PSMC obtained with real data to those obtained for the models they used. We will also look at how habitat fragmentation can be simulated using an in-house program. Some exercises will make use of R scripts (R being a freely available statistical program). Basic R knowledge is a pre-requisite but we will provide a short introduction to R. The R statistical package is a very powerful tool to analyse data outputs from many population genetics software, and can also be used to simulate genetic data under simple demographic scenarios.
 
+Find the detailed program [here](./pages/detailed_program.md)
+
 ## Course Pre-requisites
 Basic molecular population genetics and molecular ecology. Basic R knowldedge. Basic knowledge of genomic data.
 

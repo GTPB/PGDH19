@@ -27,7 +27,7 @@ Find the detailed program [here](./pages/detailed_program.md)
 * Day #2 [Demographic Inference in Population Genetics 1](./pages/Day2_DemogInf1.md)
 * Day #3 [Demographic Inference in Population Genetics 2](./pages/Day3_DemogInf2.md)
 * Day #4 [Influence of population structure on the demographic inference](./pages/Day4_PopStructDH.md)
-* Day 5 [Demographic history with genomic data](./pages/Day5_DH_genomic_data.md)
+* Day #5 [Demographic history with genomic data](./pages/Day5_DH_genomic_data.md)
 
 ---
 
@@ -82,7 +82,7 @@ Instituto Gulbenkian de Ciência, Oeiras, PT
 
 ## IMPORTANT DATES for this Course
 Deadline for applications: <b>May 7<sup>th</sup> 2019</b>
-Course date: <b>May 14<sup>th</sup> - May 14<sup>th</sup> 2019</b>
+Course date: <b>May 14<sup>th</sup> - May 18<sup>th</sup> 2019</b>
 
 Candidates with adequate profile will be accepted in the next 72 hours after the application until we reach 20 participants.
 

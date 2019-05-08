@@ -1,0 +1,32 @@
+1. Open the file with the simulated Fst values
+
+2. Delete text (only leave simulated Fst values)
+
+3. save the file as "Fst_sim.txt"
+
+4. Start the R program
+
+5. Assign the observed Fst :
+
+Fst.obs <- 0.45 
+
+6. Import the simulated values into a vector:
+
+Fst.sim <- scan ("Fst_sim.txt")
+
+7. Produce a histogram:
+
+hist(Fst.sim, xlab="Fst values", ylab="frequency",  xlim=c(0,1))
+
+
+8. Plot a vertical line corresponding to the observed value:
+
+abline (v=Fst.obs, lty=2)
+
+9. Compute the number of values greater, equal and smaller than the observed value:
+
+length(Fst.sim[Fst.sim>Fst.obs]) / length(Fst.sim)
+
+length(Fst.sim[Fst.sim<Fst.obs]) / length(Fst.sim)
+
+length(Fst.sim[Fst.sim==Fst.obs]) / length(Fst.sim)

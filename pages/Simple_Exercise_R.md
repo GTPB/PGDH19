@@ -14,5 +14,5 @@ Modify the code of the script [R_script_Genetic_Drift_Basic.R](../src/R/R_script
 
 ### Back
 
-Back to [Day 1](./Day1_coalescent.md).
-Back to [first page](../index.md).
+Back to [Day 1](./Day1_coalescent.html).
+Back to [first page](../index.html).

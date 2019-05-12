@@ -11,6 +11,7 @@ title: Day 1 - Coalescent theory
 * [Introduction to R](../assets/Intro_to_R/Script_Intro_R.r)
 * [Simple Exercise using R](./Simple_Exercise_R.html)
 * [ms - a program for generating samples under neutral models](../assets/Practical_ms.pdf)
+* [ms documentation](../assets/msdoc.pdf)
 * [Plotting coalescent trees using R](Plot_coalescence_trees_with_R.html)
 
 ### Back

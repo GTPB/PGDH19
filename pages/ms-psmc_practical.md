@@ -125,3 +125,8 @@ And you will finally get a figure with the inferred demographic history (dashed 
 You can also plot the psmc results by using the perl script *utils/psmc_plot.pl* wich comes with the PSMC software.
 
 [1]: http://www.nature.com/articles/nature10231 "Heng Li & Richard Durbin, Inference of human population history from individual whole-genome sequences,  Nature 475, 493–496 (28 July 2011) doi:10.1038/nature102312011"
+
+### Back
+
+Back to [Day #2](./Day2_DemogInf1.md).  
+Back to [first page](https://gtpb.github.io/COURSE/).

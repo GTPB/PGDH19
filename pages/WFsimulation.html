@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visual Wright-Fisher Simulation</title>
+    <meta content="">
+    <style></style>
+  </head>
+
+<body>
+<h1>
+  Visual Wright-Fisher Simulation
+</h1>
+
+<div id="parameters">
+<label for="Number of individuals: ">Number of individuals: </label>
+<input id="n_indiv" type="text" name="n_indiv" value="5" /><br>
+<label for="Number of generations: ">Number of generations: </label>
+<input id="n_generations" type="text" name="n_generations" value="5" /><br>
+<button onclick="simulate_and_draw()">Simulate</button>
+<button onclick="reset()">Reset</button>
+</div>
+
+<div align="center" style="float:left;">
+<div id="original_header" style="height:50px;"></div>
+<canvas id="canvas_original" width="430" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+<div align="center" style="float:left;">
+<div id="sorted_header" style="height:50px;"></div>
+<canvas id="canvas_sorted" width="430" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+<div align="center" style="float:left;">
+<div id="ancestral_header" style="height:50px;"></div>
+<canvas id="canvas_ancestral_material" width="430" height="500" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+<script>
+
+
+
+function drawGenerations(canvas2draw, generations, radium, x_0, y_0, space_x, space_y) {
+	// Draws a graphic representation of one realization of a Wright-Fisher model in the given canvas context
+	n_generations = generations.length+1;
+	n_individuals = generations[0].length;
+
+	// Draw the circles
+	for (i=0; i < n_generations; i++) {
+		for (j = 0; j < n_individuals; j++) {
+			canvas2draw.beginPath();
+    		canvas2draw.arc(x_0+space_x*j, y_0+space_y*i, radium, 0, 2 * Math.PI);
+    		canvas2draw.stroke();
+		}
+	}
+
+	// Draw the lines
+	for (i = 0; i < generations.length; i++) {
+		//alert(generations[i].length);
+		for (j = 0; j < generations[i].length; j++) {
+			canvas2draw.beginPath();
+			canvas2draw.moveTo(x_0+space_x*j, y_0+space_y*(i+1))
+			canvas2draw.lineTo(x_0+space_x*generations[i][j], y_0+space_y*i)
+			canvas2draw.stroke();
+		}
+	}
+}
+
+
+function identify_AncestralMaterial(generations) {
+	// Given a realization of the Wright-Fisher model
+	// returns a list in the same format containing
+	// boolean values (i.e. True if the individual
+	// has ancestral material and False otherwise)
+	n = generations.length; // the number of generations
+	n_indiv = generations[0].length; // number of individuals
+	ancestral_list = [];
+	current_g = [];
+	previous_g = [];
+	for (i=0; i<temp_g[0].length; i++) {
+		current_g.push(true);
+		previous_g.push(false);
+	}
+	// The last generation has always ancestral material
+	ancestral_list.push(current_g);
+	for (i=0; i<n; i++) {
+		for (j=0; j<temp_g[i].length; j++) {
+			// Set to true the ancestors of the sample
+			if (current_g[j]) {
+				previous_g[generations[n-1-i][j]] = current_g[j];
+			}
+		}
+		// Do current = previous
+		current_g = [];
+		for (j=0; j<n_indiv; j++) {
+			current_g.push(previous_g[j]);
+		}
+		ancestral_list.push(current_g);
+		for (j=0; j<n_indiv; j++) {
+			previous_g[j] = false;
+		}
+	}
+	return ancestral_list.reverse();
+}
+
+function drawGenerations_AncestralMaterial(canvas2draw, generations, ancestral_list, radium, x_0, y_0, space_x, space_y) {
+	// Does the same as "drawGenerations" but making a difference when lineages have
+	// ancestral material
+	n_generations = generations.length+1;
+	n_individuals = generations[0].length;
+	// Draw the circles
+	for (i=0; i < n_generations; i++) {
+		for (j = 0; j < n_individuals; j++) {
+			canvas2draw.beginPath();
+    		canvas2draw.arc(x_0+space_x*j, y_0+space_y*i, radium, 0, 2 * Math.PI);
+    		canvas2draw.stroke();
+		}
+	}
+
+	// Draw the lines
+	for (i = 0; i < generations.length; i++) {
+		//alert(generations[i].length);
+		for (j = 0; j < generations[i].length; j++) {
+			//ctx.setLineDash([0,0]);
+			canvas2draw.beginPath();
+			if (!ancestral_list[i+1][j]) {
+				canvas2draw.setLineDash([5]);
+			}
+			canvas2draw.moveTo(x_0+space_x*j, y_0+space_y*(i+1))
+			canvas2draw.lineTo(x_0+space_x*generations[i][j], y_0+space_y*i)
+			canvas2draw.stroke();
+			canvas2draw.setLineDash([0,0]);
+			//canvas2draw.restore();
+		}
+	}
+
+}
+
+function simulate_WF(n_indiv, n_generations) {
+	// Simulates a realization of a Wright-Fisher model given the
+	// number of individuals and the number of generations
+	generations = [];
+	for (i = 0; i < n_generations-1; i++) {
+		g = [];
+		for (j = 0; j < n_individuals; j++) {
+			g.push(Math.floor(Math.random()*n_individuals))
+		}
+		generations.push(g)
+	}
+	return generations;
+}
+
+function sort_WF_simulation(generations){
+	// Rearrange the individuals in the result of a WF
+	// simulation in order to the graph to be more clear
+	n = generations.length; // the number of generations
+	n_indiv = generations[0].length; // number of indiv per generation
+	temp_g = [];
+	for (i=0; i<n; i++) {
+		temp_g.push(generations[i]);
+	}
+	sorted_generations = [];
+	for (i=0; i<n-1; i++) {
+		// Constructing the object
+		new_g = [];
+		for (j=0; j < n_indiv; j++){
+			new_g.push({previous_position: j, ancestor: temp_g[i][j]});
+		}
+		// Sort new_g by ancestor increasing
+		new_g.sort(function(obj1, obj2){return obj1.ancestor - obj2.ancestor});
+		// Copying the new individuals in the ordered way
+		sorted_indiv = [];
+		for (j=0; j<n_indiv; j++) {
+			sorted_indiv.push(new_g[j].ancestor);
+		}
+		sorted_generations.push(sorted_indiv);
+
+		// Updating the value of the ancestor for every individual in the
+		// following generation having new_g[j] as ancestor
+		values2update = [];
+		for (j=0; j<n_indiv; j++) {
+			values2update.push(temp_g[i+1][j]);
+		}
+		for (j=0; j<n_indiv; j++) {
+			if (new_g[j].previous_position != j){
+				ancestor_index = values2update.indexOf(new_g[j].previous_position);
+				while (ancestor_index!=-1) {
+					values2update[ancestor_index] = -1; // ancestral value has been corrected
+					temp_g[i+1][ancestor_index] = j;
+					ancestor_index = values2update.indexOf(new_g[j].previous_position);
+				}
+			}
+		}
+	}
+	new_g = [];
+	for (i=0; i<n_indiv; i++) {
+		new_g.push(temp_g[n-1][i]);
+	}
+	new_g.sort();
+	sorted_generations.push(new_g);
+	return sorted_generations;
+}
+
+function simulate_and_draw(){
+
+	var text1 = document.getElementById("n_indiv");
+	n_individuals = text1.value;
+	var text2 = document.getElementById("n_generations");
+	n_generations = text2.value;
+
+	// Do the simulation
+	generations = simulate_WF(n_individuals, n_generations);
+
+	// Draw the results
+	var c = document.getElementById("canvas_original");
+	var ctx = c.getContext("2d");
+	ctx.clearRect(0, 0, c.width, c.height);
+	drawGenerations(ctx, generations, 10, 30, 30,  40, 50);
+
+	// Sorting the generations
+	sorted_generations = sort_WF_simulation(generations);
+
+	// Draw the sorted generations
+	var c = document.getElementById("canvas_sorted");
+	var ctx = c.getContext("2d");
+	ctx.clearRect(0, 0, c.width, c.height);
+	drawGenerations(ctx, sorted_generations, 10, 30, 30,  40, 50);
+
+	// Identify which individuals has ancestral material
+	ancestral_list = identify_AncestralMaterial(sorted_generations);
+
+	// Draw the resulting coalescent tree
+	var c = document.getElementById("canvas_ancestral_material");
+	var ctx = c.getContext("2d");
+	ctx.clearRect(0, 0, c.width, c.height);
+	drawGenerations_AncestralMaterial(ctx, sorted_generations, ancestral_list, 10, 30, 30,  40, 50);
+
+	// Writing titles
+	t1 = document.getElementById("original_header");
+	t1.innerHTML = "Wright-Fisher simulation";
+	t2 = document.getElementById("sorted_header");
+	t2.innerHTML = "Rearranged";
+	t3 = document.getElementById("ancestral_header");
+	t3.innerHTML = "Ancestral Lineages";
+}
+
+function reset() {
+	document.getElementById("n_indiv").value = 5;
+	document.getElementById("n_generations").value = 5;
+
+}
+
+</script>
+
+
+</body>
+</html>

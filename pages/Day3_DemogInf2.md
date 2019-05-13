@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page title
+title: Day #3 - Demographic Inference in Population Genetics 2
 ---
 
 ## Day #3 - Demographic inference
@@ -12,4 +12,4 @@ title: Page title
 
 ### Back
 
-Back to [first page](https://gtpb.github.io/COURSE/).
+Back to [first page](../index.md).

@@ -5,6 +5,9 @@ tagline: Population Genetics and Demographic History: model-based approaches
 description: Models to analise genomic data. Discussions on how to interpret demographic inferences in population genetics
 ---
 
+
+![](./assets/Lemur.jpg)
+
 ## Course Description
 
 Genetic and genomic data are increasingly used by ecologists and evolutionary biologists in general. It has thus become important for many biologists with different levels of experience to produce and analyse genetic (and genomic) data. In this course we will take a practical approach to the analysis of genetic and genomic data, but we will also provide some of the theoretical background required to understand the outputs of the software used. This course will be organised so as to mix lectures where important notions are introduced with practicals where freely available software will be used. While this will not be the focus of the course, we will also introduce and discuss genealogical (coalescent-based) simulation methods and those based on forward-in-time simulations. Altogether this will allow to discuss the potentialities and limitations of the tools available to the community.

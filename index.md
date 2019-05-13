@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PGDH18
+title: PGDH19
 tagline: Population Genetics and Demographic History: model-based approaches
 description: Models to analise genomic data. Discussions on how to interpret demographic inferences in population genetics
 ---
@@ -89,4 +89,4 @@ Candidates with adequate profile will be accepted in the next 72 hours after the
 ---
 
 
-The source for this course webpage is [on github](https://github.com/GTPB/Web_course_template).
+The source for this course webpage is [on github](https://github.com/GTPB/PGDH19).

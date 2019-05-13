@@ -3,7 +3,7 @@
 
 |PGDH18 | Population Genetics and Demographic History |
 |:-------|:---------------------------------------------|
-| **Mon, <b>14<sup>th</sup> </b>May** | <p style="text-align:right">**Coalescent theory - Day #1**</p> |
+| **Mon, <b>13<sup>th</sup> </b>May** | <p style="text-align:right">**Coalescent theory - Day #1**</p> |
 | 09:30 - 11:00 | Introductions and expectations. <br /> Wright-Fisher model and Kingman's coalescent. |
 | 11:00 - 11:30	| Coffee Break |
 |11:30 - 12:30 | Coalescent simulations using ms.|
@@ -11,7 +11,7 @@
 |14:00 - 16:00 |Introduction to the R statistical language (Quick Recap).|
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 |Coalescent simulations and tree visualizations using R packages. |
-| **Tue, <b>15<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic Inference in Population Genetics 1 - Day#2**</p> |
+| **Tue, <b>14<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic Inference in Population Genetics 1 - Day#2**</p> |
 |09:30 - 11:00 |	Morning Wrap-up (what have we done so far? <br /> The Coalescent with Recombination and the Sequentially Markovian Coalescent. |
 |11:00 - 11:30 | Coffee Break |
 |11:30 - 12:30 | Fast SimCoal and the Site Frequency Spectrum (SFS) 1.|
@@ -19,7 +19,7 @@
 |14:00 - 16:00 | Fast SimCoal and the Site Frequency Spectrum (SFS) 2. |
 |16:00 - 16:30 |	Tea Break |
 |16:30 - 18:00 | Fast SimCoal and the Site Frequency Spectrum (SFS) 3. |
-| **Wed, <b>16<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic Inference in Population Genetics 2 - Day#3** </p>|
+| **Wed, <b>15<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic Inference in Population Genetics 2 - Day#3** </p>|
 |09:30 - 11:00 | Morning Wrap-up (what have we done so far?) <br /> Population Structure and outlier loci using pcadapt I.|
 |11:00 - 11:30 | Coffee Break |
 |11:30 - 12:30 | Population Structure and outlier loci using pcadapt II.|
@@ -27,7 +27,7 @@
 |14:00 - 16:00 | ABC (Approximate Bayesian Computation) in pop genetics and pop genomics I. |
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 | ABC (Approximate Bayesian Computation) in pop genetics and pop genomics II. |
-| **Thu, <b>17<sup>th</sup> </b>May** | <p style="text-align:right">**Influence of population structure on the demographic inference - Day#4** </p>|
+| **Thu, <b>16<sup>th</sup> </b>May** | <p style="text-align:right">**Influence of population structure on the demographic inference - Day#4** </p>|
 |09:30 - 11:00 | Morning Wrap-up (what have we done so far?) <br /> Simulating populations in space with the SINS software (I).|
 |11:00 - 11:30 | Coffee Break |
 |11:30 - 12:30 | Simulating populations in space with the SINS software (II).<br/>Discussion of SINS Results. |
@@ -35,7 +35,7 @@
 |14:00 - 16:00 | The PSMC: reconstructing population size changes based on one diploid genome.|
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 | Signals of population size changes in structured populations. <br/>Introduction of the Inverse Instantaneous Coalescence Rate (IICR).|
-| **Fri, <b>18<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic history with genomic data - Day#5** </p>|
+| **Fri, <b>17<sup>th</sup> </b>May** | <p style="text-align:right">**Demographic history with genomic data - Day#5** </p>|
 |09:30 - 11:00 | Morning Wrap-up (what have we done so far? <br /> The IICR as a guide to demographic inference and model exclusion/choice (I).|
 |11:00 - 11:30 | Coffee Break |
 |11:30 - 12:30 | The IICR as a guide to demographic inference and model exclusion/choice. (II).|

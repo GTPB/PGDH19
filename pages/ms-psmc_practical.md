@@ -129,4 +129,4 @@ You can also plot the psmc results by using the perl script *utils/psmc_plot.pl*
 ### Back
 
 Back to [Day #4](./Day4_PopStructDH.md).  
-Back to [first page](https://gtpb.github.io/COURSE/).
+Back to [first page](../index.md).

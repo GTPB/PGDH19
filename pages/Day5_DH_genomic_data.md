@@ -10,4 +10,4 @@ title: Page title
 
 ### Back
 
-Back to [first page](https://gtpb.github.io/COURSE/).
+Back to [first page](../index.md).

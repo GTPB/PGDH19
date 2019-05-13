@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page title
+title: Day #2 Summary
 ---
 
 ## Day #3. Feedback questions about Day 2
@@ -25,4 +25,4 @@ Please answer the following questions using a 1 to 5 scale:
 ### Back
 
 Back to [Day #3](./Day3_DemogInf2.md).  
-Back to [first page](https://gtpb.github.io/COURSE/).
+Back to [first page](../index.md).

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page title
+title: Coalescent Theory
 ---
 
 ## Mark Beaumont course on Coalescent Theory
@@ -14,5 +14,6 @@ title: Page title
 
 ### Back
 
-Back to [Day #1](./Day1_coalescent.html).
-Back to [first page](https://gtpb.github.io/COURSE/).
+Back to [Day #1](./Day1_coalescent.md).
+
+Back to [first page](../index.md).

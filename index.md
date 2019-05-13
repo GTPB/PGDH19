@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PGDH19
-tagline: Population Genetics and Demographic History: model-based approaches
+tagline: Population Genetics and Demographic History - model-based approaches
 description: Models to analise genomic data. Discussions on how to interpret demographic inferences in population genetics
 ---
 

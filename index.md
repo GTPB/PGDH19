@@ -91,12 +91,4 @@ Instituto Gulbenkian de Ciência, Oeiras, PT
 
 ---
 
-## IMPORTANT DATES for this Course
-Deadline for applications: <b>May 7<sup>th</sup> 2019</b>
-Course date: <b>May 14<sup>th</sup> - May 18<sup>th</sup> 2019</b>
-
-Candidates with adequate profile will be accepted in the next 72 hours after the application until we reach 20 participants.
-
----
-
 The source for this course webpage is [on github](https://github.com/GTPB/PGDH19).

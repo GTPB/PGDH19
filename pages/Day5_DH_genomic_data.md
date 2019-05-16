@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Page title
+title: Day 5 - Demographic history with genomic data
 ---
 
-## Day #4 - Demographic inference
+## Day #5 - Demographic inference
 * [Current IICR repository](https://github.com/willyrv/IICREstimator)
 * [IICR Practicals](../assets/IICR_practicals.zip)
 

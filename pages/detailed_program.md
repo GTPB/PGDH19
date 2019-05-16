@@ -28,11 +28,11 @@
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 | ABC (Approximate Bayesian Computation) in pop genetics and pop genomics II. |
 | **Thu, <b>16<sup>th</sup> </b>May** | **Influence of population structure on the demographic inference - Day#4** |
-|09:30 - 11:00 | Morning Wrap-up (what have we done so far?) <br /> Simulating populations in space with the SINS software (I).|
+|09:30 - 11:00 | Morning Wrap-up (what have we done so far?) <br /> Practicals: Plotting coalescent trees under structured scenarios.|
 |11:00 - 11:30 | Coffee Break |
-|11:30 - 12:30 | Simulating populations in space with the SINS software (II).<br/>Discussion of SINS Results. |
+|11:30 - 12:30 | Introduction to the PSMC method for reconstructing population <br/> size changes based on one diploid genome |
 |12:30 - 14:00 | Lunch Break |
-|14:00 - 16:00 | The PSMC: reconstructing population size changes based on one diploid genome.|
+|14:00 - 16:00 | Practicals: using PSMC for reconstructing demographic history from data simulated with ms.|
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 | Signals of population size changes in structured populations. <br/>Introduction of the Inverse Instantaneous Coalescence Rate (IICR).|
 | **Fri, <b>17<sup>th</sup> </b>May** | **Demographic history with genomic data - Day#5** |

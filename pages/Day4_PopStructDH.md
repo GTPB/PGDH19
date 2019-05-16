@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day #4 - Influence of population structure on the demographic inference
+title: Day 4 - Influence of population structure on the demographic inference
 ---
 
 ## Day #4 - Demographic inference

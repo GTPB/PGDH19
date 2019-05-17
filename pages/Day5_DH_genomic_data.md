@@ -4,9 +4,9 @@ title: Day 5 - Demographic history with genomic data
 ---
 
 ## Day #5 - Demographic inference
-* [Current IICR repository](https://github.com/willyrv/IICREstimator)
-* [IICR Practicals](../assets/IICR_practicals.zip)
-
+* [Simulating IICR plots using ms software](./tutorial_simulating_IICR.md)
+* [Hand-fitting a human PSMC with an n-island model](./tutorial_handfitting_IICR.md)
+* [IICR Practicals files](../assets/IICR_practicals.zip)
 
 ### Back
 

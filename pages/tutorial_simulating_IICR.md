@@ -1,4 +1,7 @@
-# Simulating IICR plots using ms software
+---
+layout: page
+title: Simulating IICR plots using ms software
+---
 
 In this tutorial we will reproduce some of the IICR plots done in [Chikhi et al (2018)](https://www.nature.com/articles/s41437-017-0005-6).
 
@@ -148,6 +151,10 @@ python ./estimIICR.py ./parameters_tutorial.json
 
 Go to the [supplementary file](https://static-content.springer.com/esm/art%3A10.1038%2Fs41437-017-0005-6/MediaObjects/41437_2017_5_MOESM1_ESM.pdf) of the Chikhi et al 2018 paper and use the given ms commands in order to reproduce the plots of the paper. The ms commands start in section 4 (page 10) of the pdf document.
 
+
+<br/>
+
+### Back
 
 Back to [Day #5](./Day5_DH_genomic_data.md).   
 Back to [first page](../index.md).

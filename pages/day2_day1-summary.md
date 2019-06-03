@@ -25,3 +25,6 @@ If you had genetic data from many independent markers, would you be able to dete
 
 Back to [Day #2](./Day2_DemogInf1.md).  
 Back to [first page](../index.md).
+
+
+

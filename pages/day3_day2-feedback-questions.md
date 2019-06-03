@@ -22,6 +22,8 @@ Please answer the following questions using a 1 to 5 scale:
 6. How comfortable are you in applying this method to your own data ?  
 (hint: What type of data can you use?)
 
+<br/>
+
 ### Back
 
 Back to [Day #3](./Day3_DemogInf2.md).  

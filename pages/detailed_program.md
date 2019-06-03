@@ -1,5 +1,7 @@
-## PGDH19
-## Population Genetics and Demographic History: model-based approaches
+---
+layout: page
+title: PGDH19 Detailed Program
+---
 
 |PGDH19 | Population Genetics and Demographic History |
 |:-------|:---------------------------------------------|
@@ -43,3 +45,9 @@
 |14:00 - 16:00 | Wrap Up on Demographic history and genomic data.|
 |16:00 - 16:30 | Tea Break |
 |16:30 - 18:00 | Final Discussion / Course Wrap Up.|
+
+<br/>
+
+### Back
+
+Back to [first page](../index.md).

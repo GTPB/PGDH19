@@ -20,6 +20,8 @@ Also, you can type:
 install.packages(c("phyclust", "ape"))
 ```
 
+<br/>
+
 ### There are two scripts:
 * [plot_ms_trees_single_pop.R](../src/R/plot_ms_trees_single_pop.R)
 * [plot_ms_trees_mig.R](../src/R/plot_ms_trees_mig.R)
@@ -62,6 +64,8 @@ Type again:
 source(“plot_ms_trees_mig.R”)
 ```
 
+<br/>
+
 ## Plotting average trees using R (WR script)
 
 There are two scripts:
@@ -75,6 +79,7 @@ source(“CoalTreesSimulation.R”)
 
 Then you can open the file *CoalTreesSimulation.R* in a text editor and modify some of the parameters to see what happens.
 
+<br/>
 
 ### Back
 

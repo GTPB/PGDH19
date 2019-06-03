@@ -21,6 +21,8 @@ If you had genetic data from many independent markers, would you be able to dete
 
  What question would be important to ask to answer that?  
 
+<br/>
+
 ### Back
 
 Back to [Day #2](./Day2_DemogInf1.md).  

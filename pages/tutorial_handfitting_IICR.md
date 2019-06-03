@@ -1,6 +1,11 @@
-# Hand-fitting a human PSMC with an _n_-island model
+---
+layout: page
+title: Hand-fitting a human PSMC with an _n_-island model
+---
 
 In this tutorial we will give an approximate explanation to a human PSMC using a non-stationary symmetrical n-island model by performing curve fitting of the IICR by hand, using the techniques introduced in [Rodríguez et. al. (2018)](https://www.nature.com/articles/s41437-018-0148-0).
+
+<br/>
 
 ## What you'll need:
 
@@ -14,12 +19,15 @@ In this tutorial we will give an approximate explanation to a human PSMC using a
 
 3. **A working version of ms**. Again, you will find it already installed in your environment. To test this, just type `ms` in your shell prompt. You could also download the source from [here](http://home.uchicago.edu/rhudson1/source/mksamples.html) and follow the instructions to compile it yourself. You can find the documentation of the software [here](https://housecloud.willyrv.com/index.php/s/aFxTPRmdTzsk2RV).
 
+<br/>
 
 ## The configuration file
 
 The description for the scenarios to be simulated or computed are specified in a configuration text file. The path to this file has to be specified when we run the main _estimIICR.py_ script. The configuration file is in JSON format. You can see details about the JSON format [here](https://www.json.org/) or [here](https://tools.ietf.org/html/rfc7159.html).
 
 The configuration  file contains descriptions of various demographic scenarios, in several formats, and instructions on how to plot their corresponding IICRs. For this tutorial we are interested in loading a single PSMC file, of a human genome in this case, to use as visual reference during the hand-fitting process; as well as a theoretical _n_-island, one that we are going to build from the ground-up to have it match the human PSMC.
+
+<br/>
 
 ## Loading a PSMC file and an _n_-island model
 
@@ -88,6 +96,8 @@ Notice how the black IICR curve has slightly shifted upwards and to the right, a
 
 The above figure has been obtained with the values $N_0 = 1300$, $n=11$ and $M=0.6$, but you are encouraged to try other combinations of these parameters!
 
+<br/>
+
 ## Introducing the non-stationary model
 
 In order to be able to fit the various features of the PSMC curve, we can insert any number of demographic events that change the migration rate and/or the deme size at certain points in time.
@@ -108,11 +118,16 @@ Running the script again with the modified configuration file yields:
 
 The time value 6.2 for `tau` was obtained taking into account the horizontal scaling of the IICR previously mentioned. In this case, we want to introduce a change $4\times 10^5$ years ago, so if we have `N0` set to 1300 and `generation_time` to 25, then in the coalescent scale this time corresponds to $\frac{4\times 10^5}{2 g N_0} = \frac{4\times 10^5}{2 \times 25 \times 1300}\approx 6.2$.
 
+<br/>
+
 ## Your turn!
 
 Following this pattern of work we can continue trying to approximate the PSMC curve manually adjusting the structure parameters and introducing demographic changes whenever necessary.
 
 See if you can find a reasonably good fit using no more than 5 components (4 events), and without changing the deme sizes!
+
+
+<br/>
 
 ## Simulating with ms
 
@@ -156,6 +171,8 @@ Again, note that here we have divided our event times of line 29 (the values of 
 Finally, putting it all together, we obtain:
 ![Final result](../assets/handfitting_08.png)
 
+<br/>
+
 ## Recap
 
 * All the parameters are specified in a text file in the JSON format. The file name is passed as a command line argument to the script *estimIICR.py* like so:
@@ -168,6 +185,10 @@ Finally, putting it all together, we obtain:
 * Any scenario that can be specified by an ms commands can be input and simulated in the `"scenarios"` list of dictionaries. For this you need to have a working version of ms in the same folder as the Python script (or have it installed in $PATH).
 * You can alter the scaling parameters with the dictionary `"scale_params"`.
 
+
+<br/>
+
+### Back
 
 Back to [Day #5](./Day5_DH_genomic_data.md).   
 Back to [first page](../index.md).

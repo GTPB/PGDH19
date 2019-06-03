@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day #2 Summary
+title: Day 2 Summary
 ---
 
 ## Day #3. Feedback questions about Day 2

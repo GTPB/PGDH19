@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day #1 Summary
+title: Day 1 Summary
 ---
 
 ## Day #1. The basics of inference in population genetics: Wright Fisher and the coalescent

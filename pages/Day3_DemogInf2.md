@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Day #3 - Demographic Inference in Population Genetics 2
+title: Day 3 - Demographic Inference in Population Genetics 2
 ---
 
 * [Day 2 Feedback Questions](./day3_day2-feedback-questions.md)

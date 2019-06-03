@@ -5,6 +5,8 @@ title: Simulating IICR plots using ms software
 
 In this tutorial we will reproduce some of the IICR plots done in [Chikhi et al (2018)](https://www.nature.com/articles/s41437-017-0005-6).
 
+<br/>
+
 ### What do you need:
 
 1. A working version of ms
@@ -29,6 +31,8 @@ In this tutorial we will reproduce some of the IICR plots done in [Chikhi et al 
  ```
   to clone de repository or you can download the files in a .zip file
 
+
+<br/>
 
 ### Testing if ms is working on your system
 
@@ -62,6 +66,7 @@ usage: ms nsam howmany
 
 This is actually an error message but shows that ms is working fine. We can move forward.
 
+<br/>
 
 ### The configuration file
 
@@ -132,6 +137,8 @@ python ./estimIICR.py ./parameters_tutorial.json
 You should obtain this:
 ![n-islands with theoretical IICR](../assets/n-islands_n10M1_with_theoretical.png)
 
+<br/>
+
 ### Recap
 
 * All the parameters are specified in a text file with *json* format. The file name is *parameters_tutorial.json* and is in the same folder as the script *estimIICR.py*. Remember to **save changes** after any modification.
@@ -146,6 +153,8 @@ python ./estimIICR.py ./parameters_tutorial.json
   * You can put a label for the scenario in line *5*.
   * The limits of the plot can be setted in line *41*.
   * You can choose to plot the theoretical IICR by changing *0* to *1* in line 56
+
+<br/>
 
 ### Now is your turn
 

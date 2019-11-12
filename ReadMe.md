@@ -8,9 +8,11 @@
 
 The following co-authors contributed to the development of the training material.
 
-* [Veit Schwämmle](https://github.com/veitveit)
-* [David Bouyssié](https://github.com/david-bouyssie)
-* [Marc Vaudel](https://github.com/mvaudel)
+* Mark Beaumont
+* [Lounès Chikhi](https://github.com/louneschikhi)
+* [Willy Rodríguez](https://github.com/willyrv)
+* [Armando Arredondo Soto](https://github.com/arredondos)
+* Vitor Sousa
 
 #### Course Webpage
 This is the link to the [course webpage](http://gtpb.igc.gulbenkian.pt/bicourses/2019/PGDH19/), for further information about the course.

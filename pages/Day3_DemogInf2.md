@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Day 3 - Demographic Inference in Population Genetics 2
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 * [Day 2 Feedback Questions](./day3_day2-feedback-questions.md)

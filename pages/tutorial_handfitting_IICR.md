@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Hand-fitting a human PSMC with an _n_-island model
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 In this tutorial we will give an approximate explanation to a human PSMC using a non-stationary symmetrical n-island model by performing curve fitting of the IICR by hand, using the techniques introduced in [Rodríguez et. al. (2018)](https://www.nature.com/articles/s41437-018-0148-0).

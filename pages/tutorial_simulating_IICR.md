@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Simulating IICR plots using ms software
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 In this tutorial we will reproduce some of the IICR plots done in [Chikhi et al (2018)](https://www.nature.com/articles/s41437-017-0005-6).

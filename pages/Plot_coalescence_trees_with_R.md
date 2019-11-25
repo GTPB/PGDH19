@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Plotting coalescent trees using R
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 ## Plotting coalescent trees using R (MAB scripts)

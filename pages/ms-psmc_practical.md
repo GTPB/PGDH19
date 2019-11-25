@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Application of PSMC to MS-simulated data
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 This is a simple tutorial showing how to use PSMC to infer the population size history from full DNA sequences. We will apply the PSMC to simulated data.

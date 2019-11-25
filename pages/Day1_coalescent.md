@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Day 1 - Coalescent theory
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PGDH19/"
+      name: "PGDH19 - Population Genetics and Demographic History - model-base aproaches"
 ---
 
 * [The basics of inference in population genetics: Wright Fisher and the coalescent](../assets/Wright-Fisher_model_and_Kingman's_coalescent.pdf)

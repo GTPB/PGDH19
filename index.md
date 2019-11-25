@@ -1,8 +1,47 @@
 ---
 layout: page
-title: PGDH19
-tagline: Population Genetics and Demographic History - model-based approaches
-description: Models to analise genomic data. Discussions on how to interpret demographic inferences in population genetics
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+
+  # Course details
+       # "name" -> The name of the course
+       # "description" -> Short description of the course
+  name: "PGDH19 - Population Genetics and Demographic History: model-base aproaches"
+  description: "Training material for hands-on course with a practical approach in the analysis of genetic and genomic data."
+
+  # Keywords -> Consult EDAM:Topic
+  keywords:  ["http://edamontology.org/topic_3796", "http://edamontology.org/topic_3293"]
+
+  # Audience -> Following Elixir-Tess input
+  audience: ["Academia/ Research Institution", "Industry", "Non-Profit Organisation"]
+
+  # Author info
+  author:
+    - "@type": Organization
+      name: "The Gulbenkian Training Programme in Bioinformatics"
+      alternateName: "GTPB"
+      sameAs: "gtpb.igc.gulbenkian.pt/bicourses/index.html"
+
+  # predominant type of learning resources
+  "learningResourceType": ["presentation", "exercise", "scripts", "handout"]
+
+  # Contributor info
+  contributor:
+    - "@type": Person
+      name: "Mark Beaumont"
+    - "@type": Person
+      name: "Lounès Chikhi"
+    - "@type": Person
+      name: "Willy Rodriguez"
+    - "@type": Person
+      name: "Vitor Sousa"
+
+  # License & Language & url
+  license: https://creativecommons.org/licenses/by/4.0/
+  inLanguage: "en-us"
+  url: "https://gtpb.github.io/PGDH19/"
 ---
 
 

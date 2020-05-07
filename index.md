@@ -37,6 +37,8 @@ schemadotorg:
       name: "Willy Rodriguez"
     - "@type": Person
       name: "Vitor Sousa"
+    - "@type": Person
+      name : "Armando Arredondo"
 
   # License & Language & url
   license: https://creativecommons.org/licenses/by/4.0/
